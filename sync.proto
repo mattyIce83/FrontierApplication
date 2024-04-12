@@ -1,0 +1,15 @@
+
+syntax = "proto3";
+
+package uhc;
+
+message SyncDataMessage{
+  bytes topic = 1;
+  bytes sender_ip_address = 2;
+  uint32 sequence_number = 3;
+  bytes uuid = 4;
+  bytes cmd = 5;
+  bytes parameter = 6;
+  bytes body = 7;
+}
+
